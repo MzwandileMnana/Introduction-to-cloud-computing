@@ -95,3 +95,49 @@ Model	Managed by Provider	Managed by You	Typical Users
 IaaS	Hardware	OS, Apps	System admins, DevOps
 PaaS	Hardware, OS, Middleware	Apps	Developers
 SaaS	Everything	Just use it	End users (business users)
+
+
+A virtual machine (VM) is a software-based emulation of a physical computer. It runs an operating system (OS) and applications just like a physical computer, but it's hosted on a physical machine called the host and managed by a hypervisor.
+
+Key Concepts:
+1. Host vs. Guest
+
+Host: The physical machine and its OS.
+
+Guest: The virtual machine and its OS running on the host.
+
+2. Hypervisor (Virtual Machine Monitor)
+
+The software that creates and manages virtual machines. Two types:
+
+Type 1 (Bare-metal): Runs directly on hardware (e.g., VMware ESXi, Microsoft Hyper-V).
+
+Type 2 (Hosted): Runs on top of an OS (e.g., VirtualBox, VMware Workstation).
+
+3. Isolation
+
+Each VM is isolated from others and from the host, which means:
+
+VMs can run different operating systems.
+
+Crashes or malware in one VM don't affect others.
+
+What Can You Do with a VM?
+
+Run multiple OSes (e.g., Linux on a Windows machine).
+
+Test software safely in a sandbox.
+
+Run legacy applications on older operating systems.
+
+Create reproducible development environments.
+
+Example
+
+You’re using a Mac, but need to run Windows software:
+
+Install VirtualBox (Type 2 hypervisor).
+
+Create a Windows VM.
+
+Install and run Windows apps inside that VM.
